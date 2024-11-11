@@ -8,3 +8,13 @@ while nbr <= 100:
    nbr=nbr+1
 
 print(liste)
+
+#IndexError et boucles while
+liste=['A','B','C','D','E','F','G']
+
+index = 0
+while index < len(liste):
+    print(liste[index])
+    index = index + 1
+    
+    
