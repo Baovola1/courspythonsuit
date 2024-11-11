@@ -17,4 +17,10 @@ while index < len(liste):
     print(liste[index])
     index = index + 1
     
-    
+#Indexing Négatif et boucle While   
+liste=['A','B','C','D','E','F','G']
+
+index = -1
+while index > -(len(liste)+1):
+    print(liste[index])
+    index = index -1
