@@ -22,3 +22,7 @@ factures = ['Fac.1','Fac.2','Fac.3','Fac.4']
  
 for compteur, facture in enumerate(factures):
     print(compteur,facture)
+
+#autre syntaxe
+for i,facture in enumerate(factures):
+    print(i,facture)
