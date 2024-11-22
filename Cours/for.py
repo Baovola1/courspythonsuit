@@ -11,3 +11,14 @@ print(objet)
 
 objet = next(iterator)
 print(objet)
+
+#Les bonnes pratiques pour travailler avec la boucle FOR
+factures = ['Fac.1','Fac.2','Fac.3','Fac.4']
+
+for each in factures:
+    print(each)
+#utilisation itérator
+factures = ['Fac.1','Fac.2','Fac.3','Fac.4']
+ 
+for compteur, facture in enumerate(factures):
+    print(compteur,facture)
