@@ -26,3 +26,9 @@ template = 'Le symbole de l\'opération {op} est {sym}'
 for symbole, opération in zip(symboles,opérations):
     message = template.format(op=opération, sym=symbole)
     print(message)
+
+#Utilisation reversed()avec une liste
+A=['a','b','c','d']
+
+for each in reversed(A):
+    print(each)
