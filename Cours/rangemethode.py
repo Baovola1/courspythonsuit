@@ -21,3 +21,10 @@ print(liste)
 #Autre méthode:
 liste_de_nombres = list(range(0,100))
 print(liste_de_nombres)
+
+#Utilisation liste décroissante(mettre dans l'ordre décroissante)
+for i in reversed(range(2,10+1)):
+    print(i)
+#Comment sauter des nombres(Ici on veut tous les brs paires=> via l'utilisation de 2 à la fin)
+for i in range (0,10,2):
+    print(i)
