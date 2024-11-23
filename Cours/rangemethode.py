@@ -28,3 +28,11 @@ for i in reversed(range(2,10+1)):
 #Comment sauter des nombres(Ici on veut tous les brs paires=> via l'utilisation de 2 à la fin)
 for i in range (0,10,2):
     print(i)
+
+#Utilisation de "continue()" => Permet de passer à l'itération suivante
+#toujours utilisé avec une condition
+for i in range(0,100):
+    if i % 2 != 0:
+        continue
+    print(i)
+    
