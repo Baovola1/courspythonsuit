@@ -37,3 +37,15 @@ for nombre in nombres:
 for nombre,racine in zip(nombres,racines_carrées,):
     
     print(f'La racine carrée du nombre {nombre} est {racine}')
+
+#Exo5:Utilisation de reversed() pour inerser l'ordre de lecture d'une liste
+# Ici on Affiche les nombres de 1 à 30 en ordre décroissant (commencer par 30)
+un_à_trente=list(range(0,30+1))
+
+#Cas d'utilisation pour obtenir les ndrs positifs inversés
+for i in reversed(un_à_trente):
+    print(i)
+#Cas d'utilisation pour obtenir un nbr négatif
+for nombre in reversed(un_à_trente):
+    negatif=-nombre# Conversion en nbr négatif
+    print(negatif)
