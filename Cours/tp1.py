@@ -25,3 +25,15 @@ multiples_de_trois=list(range(0,100,3))
 
 for each in enumerate(multiples_de_trois):
     print(each)
+
+#Ex04: Utilisation de zip() pour itérer en parallèle sur deux listes distinctes.
+nombres= list(range(1,20))
+racines_carrées = []
+# Cette boucle nous permet de créer une liste des racines carrés des nombre de 1 à 19
+for nombre in nombres:
+    racine = nombre ** 0.5
+    racines_carrées.append(racine)
+#Ici on remplace la deuxième boucle par une plus succinte en utilisant zip(...)
+for nombre,racine in zip(nombres,racines_carrées,):
+    
+    print(f'La racine carrée du nombre {nombre} est {racine}')
