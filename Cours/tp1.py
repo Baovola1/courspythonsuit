@@ -49,3 +49,11 @@ for i in reversed(un_à_trente):
 for nombre in reversed(un_à_trente):
     negatif=-nombre# Conversion en nbr négatif
     print(negatif)
+
+#Exo6:Utilisation .items() pour itérer sur les éléments d'un dict
+menu={'Poisson':100,
+      'Végé':40,
+      'Pizza':70}
+
+for plat,prix in menu.items():
+    print(f'Le cout du {plat} est {prix}$')
