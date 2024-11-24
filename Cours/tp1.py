@@ -57,3 +57,22 @@ menu={'Poisson':100,
 
 for plat,prix in menu.items():
     print(f'Le cout du {plat} est {prix}$')
+
+#Exo7:Utilisation de "continue" pour ignorer des cas dans une boucle
+# Ici on cherche tous les fichiers .mp3
+mes_fichiers= ['musique_rock.mp3',
+               'fast_and_furious_18.MP4',
+                'twilight_4_le_retour.MP4', 
+                'game_of_thrones_S1E1.mp4',
+                'musique_zumba.MP3', 
+                'musique_techno.mp3',
+                'avengers_5.mp4', 
+                'podcast_cool.MP3']
+
+for fichier in mes_fichiers:
+    #Explication: Le [-1] permet de récupérer le dernier élément de la liste créée par split('.').
+    #Dans le contexte des noms de fichiers, le dernier élément correspond généralement à l'extension du fichier (comme mp3 ou MP4).
+    
+    ext = fichier.split('.')[-1]#Ici, on sépare par un point et on récupère le dernier elt
+    if ext.lower() == 'mp3':  # Ici, on vérifie et faire une Comparaison sans le point
+        print(fichier)  # Affiche uniquement les fichiers .mp3
