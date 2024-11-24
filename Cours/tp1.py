@@ -76,3 +76,31 @@ for fichier in mes_fichiers:
     ext = fichier.split('.')[-1]#Ici, on sépare par un point et on récupère le dernier elt
     if ext.lower() == 'mp3':  # Ici, on vérifie et faire une Comparaison sans le point
         print(fichier)  # Affiche uniquement les fichiers .mp3
+
+#Exo8: TP table de multiplication avec utilisation boucle for
+#Affichage de la  de multiplications de 11 à 20 plutôt que celles de 1 à 10.
+for i in range(11, 20+1):
+    print(f'Table de multiplication de {i}')
+    for j in range(10+1):
+        print(f'{i} x {j} = {i * j}')
+    print('\n')
+
+#Affichage des tables plus grandes qui vont de 0 à 19 plutôt que de 0 à 10.
+for i in range(1, 10+1):
+    print(f'Table de multiplication de {i}')
+    for j in range(19+1):
+        print(f'{i} x {j} = {i * j}')
+    print('\n')
+
+## Question 3: Changez l'ordre d'affichage
+for i in range(1, 10+1):
+    print(f'Table de multiplication de {i}')
+    for j in range(10+1):
+        print(f'{j} x {i} = {i * j}')
+    print('\n')
+    
+for i in range(0,19+1):
+    print(f'Table de multiplication de {i}')
+    for j in reversed(range (19+1)):
+        print(f'{i}x{j} = {i*j}')
+        print('\n')
