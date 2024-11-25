@@ -21,4 +21,12 @@ dire_qlqchose_X_fois("Hey",x=5)
  
 # Appele de la fonction pour dire "Hello World", 1 fois
 # Utilisez le style keyword pour passer les deux arguments
-dire_qlqchose_X_fois(qlqchose='Hello world', x=1)    
+dire_qlqchose_X_fois(qlqchose='Hello world', x=1)   
+
+#Ex03:Ordre des KeyWords Arguments
+def créer_une_phrase(mot1,mot2,mot3):
+ phrase= mot1.title() + ' '+ mot2.lower()+' '+mot3.lower()+'.'
+ return(phrase)
+
+phrase= créer_une_phrase(mot3='SaLuT',mot1='LES',mot2='Ami.e.s')
+print(phrase)
