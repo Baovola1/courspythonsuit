@@ -17,8 +17,16 @@ def ma_fonction1(msg='Message par défaut'):
 ma_fonction1('Hey You')
 
 #Utilisatioon argument et return
+#Cas1:nbr argument compatible avec les 3 chiffres donnés
 def addition(a,b,c):
     return a+b+c
 
 result=addition(10,20,30)
+print(result)
+
+#Cas2: nbr argument différent du nbr des chiffres
+def addition1(a,b,c=0):
+    return a+b+c
+
+result=addition1(10,20)
 print(result)
