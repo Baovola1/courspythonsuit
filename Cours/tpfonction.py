@@ -58,5 +58,23 @@ print('Dehors de la fonction - 3')
 
 from helper import creer_une_phrase
 
+#Erreur=creer_une_phrase(mot1="Hey", 'tout', 'le', 'monde')
+
+#Solution
 result=creer_une_phrase("Hey","tout",'le','monde',)#Stocker dans une variable pour voir le print
 print(result)
+
+#Ex06: Erreurs de passage d'arguments
+        #Explicaton: Les arguments positionnels doivent être fournis avant les arguments nommés.
+                    #Chaque argument doit être fourni une seule fois.
+
+#Erreur fournie
+#creer_une_phrase('Hey','tout',mot3='le','monde')
+
+#Correction ou solution
+#Utilisation arguments positionnels uniquements ou nommés pour le tout
+result1=creer_une_phrase('Hey','tout','le','monde') # ou creer_une_phrase(mot1="Hey", mot2="tout", mot3="le", mot4="monde")
+print(result1)
+
+
+
