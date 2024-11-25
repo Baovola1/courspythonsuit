@@ -30,3 +30,7 @@ def addition1(a,b,c=0):
 
 result=addition1(10,20)
 print(result)
+
+result=addition1(10,20,40)
+print(result)
+
