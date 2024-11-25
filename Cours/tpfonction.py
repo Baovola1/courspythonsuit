@@ -58,7 +58,7 @@ print('Dehors de la fonction - 3')
 
 from helper import creer_une_phrase
 
-#Erreur=creer_une_phrase(mot1="Hey", 'tout', 'le', 'monde')
+#Erreur=creer_une_phrase(mot1="Hey", 'tout', 'le', 'monde')#Correction:Les arguments positionnels doivent être fournis avant les arguments nommés.
 
 #Solution
 result=creer_une_phrase("Hey","tout",'le','monde',)#Stocker dans une variable pour voir le print
@@ -69,6 +69,7 @@ print(result)
                     #Chaque argument doit être fourni une seule fois.
 
 #Erreur fournie
+#SyntaxError: positional argument follows keyword argument
 #creer_une_phrase('Hey','tout',mot3='le','monde')
 
 #Correction ou solution
@@ -77,4 +78,19 @@ result1=creer_une_phrase('Hey','tout','le','monde') # ou creer_une_phrase(mot1="
 print(result1)
 
 
+#Ex07:Erreurs de passage d'arguments
+#Missing 1 required positional argument: 'mot3'
+#creer_une_phrase(mot1="Hello", mot2="World")
 
+#Solution: Ajout d'un autre argument mot3
+result2=creer_une_phrase(mot1="Hello", mot2="World",mot3='Bao')
+print(result2)
+
+#Ex08:Erreurs de passage d'arguments
+#Missing 1 required positional argument: 'mot3'
+creer_une_phrase(mot1="I", mot2="LOVE",mot4='PYTHON')
+
+
+#Solution: insertion du mot3 en argument
+result3=creer_une_phrase(mot1="I", mot2="LOVE",mot3='SOLUTION',mot4='PYTHON')
+print(result3)
