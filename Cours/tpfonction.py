@@ -43,9 +43,20 @@ def casse_tête_suite(nombre2,nombre1):
 
 def casse_tête(nombre1,nombre2):
  print('Inside the function - casse_tête')
- casse_tête_suite(nombre1,nombre2)#5-10
+ casse_tête_suite(nombre1,nombre2)#5,10
 
 print('Dehors de la fonction - 2')
 casse_tête(nombre2=10,nombre1=5)
 
 print('Dehors de la fonction - 3')
+
+#Ex05: Se familiariser avec les erreurs de passsage d'arguments
+#Tous les arguments nommés doivent venir après les arguments positionnels.
+#2solutions possibles: 
+                    #Soit tout passer comme arguments positionnels 
+                    #Soit tout passer comme arguments nommés :
+
+from helper import creer_une_phrase
+
+result=creer_une_phrase("Hey","tout",'le','monde',)#Stocker dans une variable pour voir le print
+print(result)
