@@ -15,3 +15,10 @@ def ma_fonction1(msg='Message par défaut'):
     print(msg)
 
 ma_fonction1('Hey You')
+
+#Utilisatioon argument et return
+def addition(a,b,c):
+    return a+b+c
+
+result=addition(10,20,30)
+print(result)
