@@ -15,8 +15,8 @@ def addition(a,b,c=0):
     return result
 
 print('\nDEBUG:à l\extérieur')
-résultat= addition(10,20,30)
-print(result)
+#résultat= addition(10,20,30)
+#print(result)
 
 #Ici: On peut faire
 def addition(a,b,c=0):
@@ -29,3 +29,9 @@ def addition(a,b,c=0):
 print('\nDEBUG:à l\extérieur')
 résultat= addition(10,20,30)
 print(result)
+
+#PASSAGE D'ARGUMENTS par reference
+def simulation_double_pop(liste):
+    liste.pop()
+    liste.pop()
+    return liste

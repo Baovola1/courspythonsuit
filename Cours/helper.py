@@ -42,3 +42,12 @@ def creer_une_phrase(mot1,mot2,mot3,mot4='',mot5=''):
 
 #result3=creer_une_phrase('Mon','code','en','python','vscode')
 #print(result3)
+
+#SUITE SCOPE(ARGUMENT PAR REFERENCE)
+from scope import simulation_double_pop
+
+ma_liste=[4,10,7]
+
+result=simulation_double_pop(ma_liste)
+
+print(result)
