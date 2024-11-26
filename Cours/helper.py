@@ -51,3 +51,4 @@ ma_liste=[4,10,7]
 result=simulation_double_pop(ma_liste)
 
 print(result)
+
